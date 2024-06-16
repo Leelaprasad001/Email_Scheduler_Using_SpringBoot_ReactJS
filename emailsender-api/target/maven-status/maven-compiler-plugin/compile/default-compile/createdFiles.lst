@@ -1,0 +1,6 @@
+com\example\emailsender\emailsender\EmailsenderApplication.class
+com\example\emailsender\emailsender\model\sendEmail.class
+com\example\emailsender\emailsender\security\CorsConfig.class
+com\example\emailsender\emailsender\controller\sendEmailController.class
+com\example\emailsender\emailsender\repository\sendEmailRepo.class
+com\example\emailsender\emailsender\service\sendEmailService.class

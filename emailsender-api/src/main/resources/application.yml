@@ -1,0 +1,36 @@
+server:
+  port: 8080
+spring:
+  devtools:
+    restart:
+      enabled: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: 123
+    url: jdbc:postgresql://localhost:5432/Email
+    username: postgres
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  app:
+    cors:
+      allowed-origins: http://localhost:3000
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: leelaprasad1607@gmail.com
+    password: noyhgnydvgesncsb
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
